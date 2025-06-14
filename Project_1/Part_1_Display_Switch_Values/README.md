@@ -26,8 +26,11 @@ This module:
 
 ## Ports:
 ➤ Signal	Direction	Description
+
 ➤ SW	in	8 switches (SW[7:0])
+
 ➤ HEX0	out	7-segment output for SW[3:0]
+
 ➤ HEX1	out	7-segment output for SW[7:4]
 
 ## Code Summary:
