@@ -1,6 +1,6 @@
 # 📄 Project Documentation – Part I: Display Switch Values on 7-Segment Displays
 
-🧾 Project Title:
+## 🧾 Project Title:
 **Target FPGA Board**: Intel **DE10-Lite** (MAX10 family)
 
 This project displays the values from 8 input switches (SW[7:0]) on two 7-segment displays (HEX1 and HEX0) using VHDL. The DE10-Lite development board is used for implementation and testing.
