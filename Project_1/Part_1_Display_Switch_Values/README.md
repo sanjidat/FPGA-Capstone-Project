@@ -1,7 +1,9 @@
 # 📄 Project Documentation – Part I: Display Switch Values on 7-Segment Displays
 
 🧾 Project Title:
-C4M1P1 – Display Switch Values on HEX Displays (DE10-Lite FPGA)
+**Target FPGA Board**: Intel **DE10-Lite** (MAX10 family)
+
+This project displays the values from 8 input switches (SW[7:0]) on two 7-segment displays (HEX1 and HEX0) using VHDL. The DE10-Lite development board is used for implementation and testing.
 
 ## 🔍 Objective
 - To design and implement a VHDL circuit that reads the values of 8 input switches (SW7–SW0) and displays them on two 7-segment displays (HEX1 and HEX0). The goal is to:
