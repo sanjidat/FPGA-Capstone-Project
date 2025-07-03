@@ -1,9 +1,20 @@
 # 📄 Project Documentation – Part I: Display Switch Values on 7-Segment Displays
 
+**Author**      : Sanjida Orin Tawhid  
+**Date**        : 15 Jun 2025  
+**Project**     : C4M1P1  
+**Board**       : DE10-Lite (MAX10 10M50DAF484C7G)  
+**Quartus**     : 16.1 Lite Edition  
+
+---
 ## 🧾 Project Title:
 **Target FPGA Board**: Intel **DE10-Lite** (MAX10 family)
 
-This project displays the values from 8 input switches (SW[7:0]) on two 7-segment displays (HEX1 and HEX0) using VHDL. The DE10-Lite development board is used for implementation and testing.
+## 🔍 Overview
+
+This project displays two 4-bit binary numbers (SW[7:0]) as their decimal equivalents on HEX1 and HEX0. It uses a simple ROM lookup (`seg_array`) for 7-segment digit decoding.
+
+---
 
 ## 🔍 Objective
 - To design and implement a VHDL circuit that reads the values of 8 input switches (SW7–SW0) and displays them on two 7-segment displays (HEX1 and HEX0). The goal is to:
@@ -39,18 +50,19 @@ This module:
 - Uses case statements to map each 4-bit input (D0, D1) to the 7-segment LED encoding.
 - Don’t-care values are assigned as "1111111" (all segments off).
 
-## 📍 Pin Assignment
-Performed using Quartus Pin Planner. Example assignments:
+## 🔧 Switch & Display Map
 
-| Signal    | FPGA Pin | Function       |
-| --------- | -------- | -------------- |
-| `SW[0]`   | A10      | Slide Switch 0 |
-| `SW[1]`   | B10      | Slide Switch 1 |
-| `...`     | ...      | ...            |
-| `HEX0[0]` | N16      | HEX0 segment a |
-| `HEX0[1]` | P15      | HEX0 segment b |
-| `...`     | ...      | ...            |
+| Switch | Purpose            |
+|--------|--------------------|
+| SW[3:0] | Lower nibble (D0) |
+| SW[7:4] | Upper nibble (D1) |
 
+| Display | Shows            |
+|---------|------------------|
+| HEX0    | Decimal value of SW[3:0] |
+| HEX1    | Decimal value of SW[7:4] |
+
+---
 
 ## 🧪 Testing Procedure
 1. Set switch values (SW7–0)
@@ -61,10 +73,11 @@ Performed using Quartus Pin Planner. Example assignments:
 ## 📊 Resource Utilization (from Quartus)
 | Resource       | Usage (Example)          |
 | -------------- | ------------------------ |
-| Logic Elements | (e.g., 34)               |
+| Logic Elements | 15              |
 | Flip-Flops     | 0 (purely combinational) |
-| I/O Pins       | 22                       |
+| I/O Pins       | 185                      |
 
+Only 15 LEs are used to implement the ROM-based digit decoder. This is extremely efficient — less than 1% of the chip’s total capacity. Most usage comes from I/O pins, not from logic or memory. This includes all I/O used (e.g., switches, HEX displays, LEDs). High usage (51%) is due to the DE10-Lite board using many output pins for 7-segment displays and switches.
 
 ## 📈 Fmax Estimation
 Reported as “No paths to report” → because the design contains no clocked logic (no flip-flops or timing paths).
