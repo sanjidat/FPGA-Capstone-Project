@@ -30,7 +30,6 @@ Figure 2 shows a circuit for a full adder, which has the inputs a, b, and ci, an
 
 Implements a 4-bit ripple-carry adder using 4 chained 1-bit full adders. The inputs are A and B from switches SW7–0 and carry-in from SW8. The sum and carry-out are displayed on red LEDs.
 
----
 
 ## 🔧 Signal Map
 
@@ -70,6 +69,19 @@ Implements a 4-bit ripple-carry adder using 4 chained 1-bit full adders. The inp
 3. Use switches SW8–0 to test adder.
 
 ---
+
+## 📊 Resource Utilization (from Quartus)
+| Resource       | Usage (Example)          |
+| -------------- | ------------------------ |
+| Logic Elements | 9                        |
+| Flip-Flops     | 0 (purely combinational) |
+| I/O Pins       | 179                      |
+
+Only 9 LEs are used to implement the BCD Display. This is extremely efficient — less than 1% of the chip’s total capacity. Most usage comes from I/O pins, not from logic or memory. This includes all I/O used (e.g., switches, HEX displays, LEDs). High usage (50%) is due to the DE10-Lite board using many output pins for 7-segment displays and switches.
+
+## 📈 Fmax Estimation
+Reported as “No paths to report” → because the design contains no clocked logic (no flip-flops or timing paths).
+
 
 ## Notes
 
