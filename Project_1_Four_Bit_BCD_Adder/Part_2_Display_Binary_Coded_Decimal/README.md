@@ -23,6 +23,12 @@ Table 1: Binary-to-decimal conversion values.
 </pre>
 
 The output z for the comparator circuit can be specified using a single Boolean expression, with the four inputs V3-0. Design this Boolean expression by making a truth table that shows the valuations of the inputs V3-0 for which z has to be 1.
+<p align="center">
+  <img src="images/BCD_Block_Diagram.PNG" alt="Block diagram of BCD circuit" width="400">
+  <br>
+  <strong>Figure 1:</strong> Partial design of the binary-to-decimal conversion circuit
+</p>
+
   
 ![Figure 1: Partial design of the binary-to-decimal conversion circuit](images/BCD_Block_Diagram.PNG)
 
