@@ -27,7 +27,7 @@ four inputs V3-0. Design this Boolean expression by making a truth table that sh
 the inputs V3-0 for which z has to be 1.
 
 
-![Figure 1: Partial design of the binary-to-decimal conversion circuit](Project_1_Four_Bit_BCD_Adder/Part_2_Display_Binary_Coded_Decimal/images/BCD_Block_Diagram.PNG)
+![Figure 1: Partial design of the binary-to-decimal conversion circuit](images/BCD_Block_Diagram.PNG)
 
 Notice that the circuit in Figure 1 includes a 4-bit wide 2-to-1 multiplexer. The purpose of this
 multiplexer is to drive digit d0 with the value of V when z = 0, and the value of A when z = 1. To
