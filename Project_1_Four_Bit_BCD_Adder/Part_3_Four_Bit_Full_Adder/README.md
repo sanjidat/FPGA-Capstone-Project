@@ -9,12 +9,20 @@ Figure 2 shows a circuit for a full adder, which has the inputs a, b, and ci, an
 </p>
 
 
+<p align="center">
+  <img src="images/RCA and Full Adder TT.PNG">
+  <br>
+</p>
+---
+
+
+
 **Author**      : Sanjida Orin Tawhid   
 **Project**     : C4M1P3  
 **Board**       : DE10-Lite  
 **Quartus**     : 16.1 Lite Edition  
 
----
+
 
 ## 🔍 Overview
 
@@ -24,14 +32,14 @@ Implements a 4-bit ripple-carry adder using 4 chained 1-bit full adders. The inp
 
 ## 🔧 Signal Map
 
-| Switch | Purpose        |
-|--------|----------------|
+| Switch  | Purpose       |
+|---------|---------------|
 | SW[3:0] | Operand B     |
 | SW[7:4] | Operand A     |
 | SW[8]   | Carry-in      |
 
-| Output  | Description         |
-|---------|---------------------|
+| Output    | Description       |
+|-----------|-------------------|
 | LEDR[3:0] | 4-bit sum         |
 | LEDR[4]   | Carry-out         |
 
@@ -48,8 +56,8 @@ Implements a 4-bit ripple-carry adder using 4 chained 1-bit full adders. The inp
 
 | A  | B  | Cin | Sum | Cout | LEDR4–0 |
 |----|----|-----|-----|------|---------|
-| 4  | 3  | 0   | 7   | 0    | 00111   |
-| 8  | 9  | 1   | 18  | 1    | 10010   |
+| 4  | 11 | 0   | 16  | 1    | 10000   |
+| 15 | 8  | 1   | 23  | 0    | 10111   |
 
 ---
 
