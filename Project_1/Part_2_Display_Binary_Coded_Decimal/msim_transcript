@@ -1,0 +1,123 @@
+# Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do C4M1P2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/AlteraPrj/C4M1P2 {C:/AlteraPrj/C4M1P2/DE10_LITE_Golden_Top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:39 on Jun 27,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/AlteraPrj/C4M1P2" C:/AlteraPrj/C4M1P2/DE10_LITE_Golden_Top.v 
+# -- Compiling module DE10_LITE_Golden_Top
+# 
+# Top level modules:
+# 	DE10_LITE_Golden_Top
+# End time: 22:29:39 on Jun 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/AlteraPrj/C4M1P2/C4M1P2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:39 on Jun 27,2025
+# vcom -reportprogress 300 -93 -work work C:/AlteraPrj/C4M1P2/C4M1P2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity C4M1P2
+# -- Compiling architecture Structural of C4M1P2
+# End time: 22:29:39 on Jun 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/AlteraPrj/C4M1P2/circuitA.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:39 on Jun 27,2025
+# vcom -reportprogress 300 -93 -work work C:/AlteraPrj/C4M1P2/circuitA.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity circuitA
+# -- Compiling architecture Structural of circuitA
+# End time: 22:29:39 on Jun 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/AlteraPrj/C4M1P2/MUX_2_to_1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:39 on Jun 27,2025
+# vcom -reportprogress 300 -93 -work work C:/AlteraPrj/C4M1P2/MUX_2_to_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX_2_to_1
+# -- Compiling architecture Structural of MUX_2_to_1
+# End time: 22:29:40 on Jun 27,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/AlteraPrj/C4M1P2/comparator_4_bit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:40 on Jun 27,2025
+# vcom -reportprogress 300 -93 -work work C:/AlteraPrj/C4M1P2/comparator_4_bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity comparator_4_bit
+# -- Compiling architecture Structural of comparator_4_bit
+# End time: 22:29:40 on Jun 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript work.DE10_LITE_Golden_Top
+# vsim -gui -l msim_transcript work.DE10_LITE_Golden_Top 
+# Start time: 22:30:00 on Jun 27,2025
+# Loading work.DE10_LITE_Golden_Top
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.c4m1p2(structural)
+# Loading work.comparator_4_bit(structural)
+# Loading work.circuita(structural)
+# Loading work.mux_2_to_1(structural)
+add wave -position end  sim:/DE10_LITE_Golden_Top/u1/V
+add wave -position end  sim:/DE10_LITE_Golden_Top/u1/A
+add wave -position end  sim:/DE10_LITE_Golden_Top/u1/Z
+add wave -position end  sim:/DE10_LITE_Golden_Top/u1/d0
+add wave -position end  sim:/DE10_LITE_Golden_Top/u1/HEX0
+add wave -position end  sim:/DE10_LITE_Golden_Top/u1/d1
+add wave -position end  sim:/DE10_LITE_Golden_Top/u1/HEX1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /DE10_LITE_Golden_Top/u1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /DE10_LITE_Golden_Top/u1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /DE10_LITE_Golden_Top/u1
+force -freeze sim:/DE10_LITE_Golden_Top/u1/V 1001 0
+run
+force -freeze sim:/DE10_LITE_Golden_Top/u1/V 1010 0
+run
+force -freeze sim:/DE10_LITE_Golden_Top/u1/V 1011 0
+run
+force -freeze sim:/DE10_LITE_Golden_Top/u1/V 1100 0
+run
+force -freeze sim:/DE10_LITE_Golden_Top/u1/V 1101 0
+# Load canceled
+run
+force -freeze sim:/DE10_LITE_Golden_Top/u1/V 1110 0
+run
+force -freeze sim:/DE10_LITE_Golden_Top/u1/V 1111 0
+run
+set PrefMain(saveFile) { C4M1P2}
+#  C4M1P2
+force -freeze sim:/DE10_LITE_Golden_Top/u1/V 0010 0
+run
+force -freeze sim:/DE10_LITE_Golden_Top/u1/V 1011 0
+run
+force -freeze sim:/DE10_LITE_Golden_Top/u1/V 0000 0
+run
+force -freeze sim:/DE10_LITE_Golden_Top/u1/V 1111 0
+run
+force -freeze sim:/DE10_LITE_Golden_Top/u1/V 0000 0
+run
+# End time: 23:11:53 on Jun 27,2025, Elapsed time: 0:41:53
+# Errors: 1, Warnings: 3
