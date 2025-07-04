@@ -91,6 +91,18 @@ Displays a 4-bit binary value (0–15) as two decimal digits using a comparator,
 
 ---
 
+## 📊 Resource Utilization (from Quartus)
+| Resource       | Usage (Example)          |
+| -------------- | ------------------------ |
+| Logic Elements | 18              |
+| Flip-Flops     | 0 (purely combinational) |
+| I/O Pins       | 177                      |
+
+Only 18 LEs are used to implement the BCD Display. This is extremely efficient — less than 1% of the chip’s total capacity. Most usage comes from I/O pins, not from logic or memory. This includes all I/O used (e.g., switches, HEX displays, LEDs). High usage (49.1%) is due to the DE10-Lite board using many output pins for 7-segment displays and switches.
+
+## 📈 Fmax Estimation
+Reported as “No paths to report” → because the design contains no clocked logic (no flip-flops or timing paths).
+
 ## Notes
 
 - MUX selects V or A based on Z (V > 9).
