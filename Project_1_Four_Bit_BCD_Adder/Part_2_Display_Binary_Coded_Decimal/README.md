@@ -29,14 +29,6 @@ The output z for the comparator circuit can be specified using a single Boolean 
   <strong>Figure 1:</strong> Partial design of the binary-to-decimal conversion circuit
 </p>
 
-  
-![Figure 1: Partial design of the binary-to-decimal conversion circuit](images/BCD_Block_Diagram.PNG)
-
-
-**Figure 1**: Partial design of the binary-to-decimal conversion circuit.
-
-
-
 Notice that the circuit in Figure 1 includes a 4-bit wide 2-to-1 multiplexer. The purpose of this multiplexer is to drive digit d0 with the value of V when z = 0, and the value of A when z = 1. To design circuit A consider the following. For the input values V <= 9, the circuit A does not matter, because the multiplexer in Figure 1 just selects V in these cases. But for the input values V > 9, the multiplexer will select A. Thus, A has to provide output values that properly implement Table 1 when V > 9. You need to design circuit A so that the input V = 1010 gives an output A = 0000, the input V = 1011 gives the output A = 0001, …, and the input V = 1111 gives the output A = 0101. Design circuit A by making a truth table with the inputs V3-0 and the outputs A3-0.
 
 ---
