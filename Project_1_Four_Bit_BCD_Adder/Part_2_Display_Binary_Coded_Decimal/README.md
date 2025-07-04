@@ -5,7 +5,7 @@
 
 You are to design a circuit that converts a four-bit binary number V = v3v2v1v0 into its two-digit decimal equivalent D = d1d0. Table 1 shows the required output values. A partial design of this circuit is given in Figure 1. It includes a comparator that checks when the value of V is greater than 9, and uses the output of this comparator in the control of the 7-segment displays. You are to complete the design of this circuit.
 
-
+<pre>
 v3 v2 v1 v0  d1 d0
 0  0  0  0   0  0
 0  0  0  1   0  1
@@ -19,7 +19,7 @@ v3 v2 v1 v0  d1 d0
 1  1  1  0   1  4
 1  1  1  1   1  5
 Table 1: Binary-to-decimal conversion values.
-
+</pre>
 
 The output z for the comparator circuit can be specified using a single Boolean expression, with the four inputs V3-0. Design this Boolean expression by making a truth table that shows the valuations of the inputs V3-0 for which z has to be 1.
   
