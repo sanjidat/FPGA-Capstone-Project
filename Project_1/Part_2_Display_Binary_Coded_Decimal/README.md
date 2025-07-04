@@ -1,7 +1,6 @@
 # Part II – Binary to Decimal Conversion with MUX & Comparator
 
-**Author**      : Sanjida Orin Tawhid  
-**Date**        : 30 Jun 2025  
+**Author**      : Sanjida Orin Tawhid   
 **Project**     : C4M1P2  
 **Board**       : DE10-Lite  
 **Quartus**     : 16.1 Lite Edition  
