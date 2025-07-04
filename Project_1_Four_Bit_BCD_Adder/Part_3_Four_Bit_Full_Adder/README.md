@@ -3,8 +3,10 @@
 ### 🔧 Task
 Figure 2 shows a circuit for a full adder, which has the inputs a, b, and ci, and produces the outputs s and co. Figure 3 show a circuit symbol for the full adder with the truth table in Table 2, which produces the two-bit binary sum co s = a + b + ci. Figure 4 shows how four instances of this full adder module can be used to design a circuit that adds two four-bit numbers. This type of circuit is usually called a ripplecarry adder, because of the way that the carry signals are passed from one full adder to the next. Write VHDL code that implements this circuit, as described below.
 
-
-
+<p align="center">
+  <img src="images/Full_Adder_Block_Diagram.PNG">
+  <br>
+</p>
 
 
 **Author**      : Sanjida Orin Tawhid   
