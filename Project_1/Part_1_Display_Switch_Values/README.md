@@ -1,7 +1,6 @@
 # 📄 Project Documentation – Part I: Display Switch Values on 7-Segment Displays
 
-**Author**      : Sanjida Orin Tawhid  
-**Date**        : 15 Jun 2025  
+**Author**      : Sanjida Orin Tawhid 
 **Project**     : C4M1P1  
 **Board**       : DE10-Lite (MAX10 10M50DAF484C7G)  
 **Quartus**     : 16.1 Lite Edition  
