@@ -13,6 +13,8 @@ Figure 2 shows a circuit for a full adder, which has the inputs a, b, and ci, an
   <img src="images/RCA and Full Adder TT.PNG">
   <br>
 </p>
+
+
 ---
 
 
