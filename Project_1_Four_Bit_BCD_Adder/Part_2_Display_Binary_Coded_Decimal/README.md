@@ -1,6 +1,6 @@
 # Part II – Binary to Decimal Conversion with MUX & Comparator
 
-<pre>
+
 # Task:
 You are to design a circuit that converts a four-bit binary number V = v3v2v1v0 into its two-digit
 decimal equivalent D = d1d0. Table 1 shows the required output values. A partial design of this circuit
@@ -25,10 +25,9 @@ Table 1: Binary-to-decimal conversion values.
 The output z for the comparator circuit can be specified using a single Boolean expression, with the
 four inputs V3-0. Design this Boolean expression by making a truth table that shows the valuations of
 the inputs V3-0 for which z has to be 1.
+  
+![Figure 1: Partial design of the binary-to-decimal conversion circuit](images/BCD_Block_Diagram.PNG)
 
-
-![Figure 1: Partial design of the binary-to-decimal conversion circuit](Project_1_Four_Bit_BCD_Adder/Part_2_Display_Binary_Coded_Decimal/images/BCD_Block_Diagram.PNG)
-![FIFO Architecture](images/asynchronous-fifo.png)
 Notice that the circuit in Figure 1 includes a 4-bit wide 2-to-1 multiplexer. The purpose of this
 multiplexer is to drive digit d0 with the value of V when z = 0, and the value of A when z = 1. To
 design circuit A consider the following. For the input values V <= 9, the circuit A does not matter,
@@ -37,7 +36,6 @@ multiplexer will select A. Thus, A has to provide output values that properly im
 > 9. You need to design circuit A so that the input V = 1010 gives an output A = 0000, the input V =
 1011 gives the output A = 0001, …, and the input V = 1111 gives the output A = 0101. Design circuit
 A by making a truth table with the inputs V3-0 and the outputs A3-0.
-</pre>
 
   
 **Author**      : Sanjida Orin Tawhid  
