@@ -1,5 +1,46 @@
 # Part II – Binary to Decimal Conversion with MUX & Comparator
 
+<pre>
+# Task
+PART II – DISPLAY BINARY CODED DECIMAL (BCD)
+You are to design a circuit that converts a four-bit binary number V = v3v2v1v0 into its two-digit
+decimal equivalent D = d1d0. Table 1 shows the required output values. A partial design of this circuit
+is given in Figure 1. It includes a comparator that checks when the value of V is greater than 9, and
+uses the output of this comparator in the control of the 7-segment displays. You are to complete the
+design of this circuit.
+
+v3 v2 v1 v0   d1 d0
+0  0  0  0    0  0
+0  0  0  1    0  1
+0  0  1  0    0  2
+…........... ... …
+1  0  0  1    0  9
+1  0  1  0    1  0
+1  0  1  1    1  1
+1  1  0  0    1  2
+1  1  0  1    1  3
+1  1  1  0    1  4
+1  1  1  1    1  5
+Table 1: Binary-to-decimal conversion values.
+
+The output z for the comparator circuit can be specified using a single Boolean expression, with the
+four inputs V3-0. Design this Boolean expression by making a truth table that shows the valuations of
+the inputs V3-0 for which z has to be 1.
+
+![Figure 1: Partial design of the binary-to-decimal conversion circuit.](images/asynchronous-fifo.png)
+  
+Notice that the circuit in Figure 1 includes a 4-bit wide 2-to-1 multiplexer. The purpose of this
+multiplexer is to drive digit d0 with the value of V when z = 0, and the value of A when z = 1. To
+design circuit A consider the following. For the input values V <= 9, the circuit A does not matter,
+because the multiplexer in Figure 1 just selects V in these cases. But for the input values V > 9, the
+multiplexer will select A. Thus, A has to provide output values that properly implement Table 1 when V
+> 9. You need to design circuit A so that the input V = 1010 gives an output A = 0000, the input V =
+1011 gives the output A = 0001, …, and the input V = 1111 gives the output A = 0101. Design circuit
+A by making a truth table with the inputs V3-0 and the outputs A3-0.
+
+</pre>
+
+
 **Author**      : Sanjida Orin Tawhid   
 **Project**     : C4M1P2  
 **Board**       : DE10-Lite  
