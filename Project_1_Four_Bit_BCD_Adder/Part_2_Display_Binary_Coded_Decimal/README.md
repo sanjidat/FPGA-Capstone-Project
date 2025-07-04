@@ -4,6 +4,8 @@
 ### 🔧 Task
 
 ➤ Objective:
+
+
 You are to design a circuit that converts a four-bit binary number V = v3v2v1v0 into its two-digit decimal equivalent D = d1d0. Table 1 shows the required output values. A partial design of this circuit is given in Figure 1. It includes a comparator that checks when the value of V is greater than 9, and uses the output of this comparator in the control of the 7-segment displays. You are to complete the design of this circuit.
 
 <pre>
@@ -94,7 +96,7 @@ Displays a 4-bit binary value (0–15) as two decimal digits using a comparator,
 ## 📊 Resource Utilization (from Quartus)
 | Resource       | Usage (Example)          |
 | -------------- | ------------------------ |
-| Logic Elements | 18              |
+| Logic Elements | 18                       |
 | Flip-Flops     | 0 (purely combinational) |
 | I/O Pins       | 177                      |
 
