@@ -1,5 +1,13 @@
 # Part V / Project “BCD Adder (0 – 19)”
 
+DE10‑Lite FPGA · VHDL
+
+Author: Sanjida Orin Tawhid
+Date: 05 Jul 2025
+Quartus: 16.1 Lite
+Board: Terasic DE10‑Lite (MAX 10 10M50DAF484C7G)
+
+
 ### ➤ Objective:
 
 Adds two BCD digits X and Y (SW 7‑4, SW 3‑0) plus an optional carry‑in Cin (SW 8) and displays the two‑digit decimal result 0‑19 on HEX1 (tens) and HEX0 (ones).
