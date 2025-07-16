@@ -34,24 +34,24 @@ This project is a multi-stage VHDL design on the DE10-Lite FPGA, where a 4-bit b
 └── .gitignore
 </pre>
 
-Each part contains its own:
+- Each part contains its own:
 
-VHDL source files (.vhd)
+- VHDL source files (.vhd)
 
-Quartus project files
+- Quartus project files
 
-Simulation setup (ModelSim)
+- Simulation setup (ModelSim)
 
-Test cases and diagrams
+- Test cases and diagrams
 
 
 ### 🧩 Part Summaries
 🟢 Part 1: HEX Display Driver
-Takes a 4-bit binary number from SW[3:0]
+- Takes a 4-bit binary number from SW[3:0]
 
-Displays it on HEX0 using a segment decoder (ROM-style array)
+- Displays it on HEX0 using a segment decoder (ROM-style array)
 
-Demonstrates how to control 7-segment displays using combinational logic
+- Demonstrates how to control 7-segment displays using combinational logic
 
 ✅ Logic Utilization: 15 / 49,760 (0%)
 
@@ -61,20 +61,20 @@ Converts a 4-bit binary value into two-digit decimal (d1d0)
 
 Uses:
 
-A comparator to detect if value > 9
+- A comparator to detect if value > 9
 
-A MUX to choose between V and A
+- A MUX to choose between V and A
 
-A circuitA block to remap 1010–1111 to 0000–0101
+- A circuitA block to remap 1010–1111 to 0000–0101
 
-HEX1 shows tens digit (0 or 1), HEX0 shows units
+- HEX1 shows tens digit (0 or 1), HEX0 shows units
 
 ### 🟠 Part 3: 4-bit Ripple Carry Adder
 Builds a full 4-bit binary adder using 1-bit full adder components
 
-Inputs: A = SW[3:0], B = SW[7:4], Cin = SW[8]
+- Inputs: A = SW[3:0], B = SW[7:4], Cin = SW[8]
 
-Outputs: Sum on LEDR[3:0], carry out on LEDR[4]
+- Outputs: Sum on LEDR[3:0], carry out on LEDR[4]
 
 
 ### 🔵 Part 4: BCD Adder (Structural)
@@ -82,13 +82,13 @@ Adds two 4-bit BCD numbers with Cin and displays result in decimal
 
 Uses:
 
-CircuitA (for subtracting 10 when sum > 9)
+- CircuitA (for subtracting 10 when sum > 9)
 
-MUX to select between actual sum and corrected sum
+- MUX to select between actual sum and corrected sum
 
-Comparator to detect if result > 9
+- Comparator to detect if result > 9
 
-Uses segment array to display digits
+- Uses segment array to display digits
 
 Handles sums from 0 to 19
 
@@ -105,9 +105,9 @@ else
   D1 = 0
 </pre>
 
-Adds error detection: if X or Y > 9, LEDR9 turns ON and output is blanked
+- Adds error detection: if X or Y > 9, LEDR9 turns ON and output is blanked
 
-Ensures safe display by guarding all segment(...) access
+- Ensures safe display by guarding all segment(...) access
 
 ### 🧪 Simulation Tips (ModelSim)
 To test any module:
@@ -144,15 +144,15 @@ segment(...) is never accessed with invalid index
 
 
 ### 🧠 Lessons Learned
-How to convert binary to decimal (BCD) using logic
+- How to convert binary to decimal (BCD) using logic
 
-When and why to use structural vs behavioral modeling
+- When and why to use structural vs behavioral modeling
 
-How to protect against simulator crashes due to invalid signal states
+- How to protect against simulator crashes due to invalid signal states
 
-Designing reusable components like full adders, muxes, and decoders
+- Designing reusable components like full adders, muxes, and decoders
 
-Guarding VHDL logic from undefined behavior using checks (if unsigned < 10)
+- Guarding VHDL logic from undefined behavior using checks (if unsigned < 10)
 
 
 ### 📷 Screenshots & Diagrams
@@ -166,13 +166,13 @@ Guarding VHDL logic from undefined behavior using checks (if unsigned < 10)
 
 
 ### 📝 How to Build and Upload
-Open Quartus → File → Open Project → e.g. Part5_BCDAdder_Behavioral.qpf
+- Open Quartus → File → Open Project → e.g. Part5_BCDAdder_Behavioral.qpf
 
-Compile the project
+- Compile the project
 
-Go to Tools → Programmer, load .sof file
+- Go to Tools → Programmer, load .sof file
 
-Program DE10-Lite via USB-Blaster
+- Program DE10-Lite via USB-Blaster
 
 
 
