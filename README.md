@@ -34,7 +34,7 @@ This project is a multi-stage VHDL design on the DE10-Lite FPGA, where a 4-bit b
 └── .gitignore
 </pre>
 
-- Each part contains its own:
+Each part contains its own:
 
 - VHDL source files (.vhd)
 
