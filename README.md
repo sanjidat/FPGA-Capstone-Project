@@ -112,11 +112,10 @@ else
 ### 🧪 Simulation Tips (ModelSim)
 To test any module:
 
-tcl
-Copy
-Edit
 force -freeze /DE10_LITE_Golden_Top/SW 000000011 0
+
 run 10 ns
+
 To avoid fatal errors, ensure:
 
 All input signals (SWs) are defined
