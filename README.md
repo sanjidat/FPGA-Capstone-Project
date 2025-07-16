@@ -1,9 +1,14 @@
-# 🔢 Project 1: BCD Adder System (Part 1–5)
+# 🔢 BCD Adder System (Part 1–5)
 
 Author: Sanjida Orin Tawhid
+
 Course: FPGA Capstone: Building FPGA Projects
+
 Board: Terasic DE10-Lite (MAX 10 FPGA)
+
 Tool: Intel Quartus Prime 16.1 Lite Edition
+
+---
 
 ### 📦 Overview
 This project is a multi-stage VHDL design on the DE10-Lite FPGA, where a 4-bit binary number is converted to its BCD equivalent, displayed on 7-segment displays, and finally built up into a full BCD adder system capable of calculating and displaying results from 0–19. The design follows a structured progression:
@@ -18,6 +23,7 @@ This project is a multi-stage VHDL design on the DE10-Lite FPGA, where a 4-bit b
 
 
 ### BCD-Adder-Project/
+<pre>
 ├── Part1_HexDisplay/
 ├── Part2_BCDDisplay/
 ├── Part3_FullAdder/
@@ -26,6 +32,7 @@ This project is a multi-stage VHDL design on the DE10-Lite FPGA, where a 4-bit b
 ├── README.md
 ├── ProjectGuide.pdf
 └── .gitignore
+</pre>
 
 Each part contains its own:
 
